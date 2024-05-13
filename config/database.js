@@ -2,6 +2,8 @@ const dotenv = require("dotenv");
 // Untuk baca .env kita saat migration dan lainnya ke DB
 dotenv.config();
 
+console.log(process.env.DB_NAME);
+
 module.exports = {
   development: {
     username: process.env.DB_USERNAME,
